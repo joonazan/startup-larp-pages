@@ -1,0 +1,16 @@
+{
+  "name": "startup-larp-sivu",
+  "version": "0.0.1",
+  "license": "BSD-3-Clause",
+  "private": true,
+  "dependencies": {
+    "css-loader": "^0.27.2",
+    "elm-css-webpack-loader": "^3.1.0",
+    "elm-hot-loader": "^0.5.4",
+    "elm-webpack-loader": "4.2.0",
+    "file-loader": "^0.10.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  }
+}
