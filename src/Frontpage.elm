@@ -1,7 +1,7 @@
 module Frontpage exposing (view)
 
 import Html exposing (..)
-import Style.Classes exposing (class, Classes(..))
+import Classes exposing (class, Classes(..))
 
 view model =
     div [class [Flip]]

@@ -1,4 +1,4 @@
-module Style.Classes exposing (..)
+module Classes exposing (..)
 
 import Html
 import Html.Attributes
