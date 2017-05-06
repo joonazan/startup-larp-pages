@@ -11,7 +11,9 @@ css =
   (stylesheet << namespace "main")
   [ class Flip
     [ property "perspective" "1000px"
-    , width (px 200)
+    , width (pct 100)
+    , height (px 400)
+    , marginTop (px 20)
 
     , hover
       [ children
@@ -25,8 +27,7 @@ css =
     , allChildren
       [ width (pct 100)
       , position absolute
-      , backgroundColor (hex "BADA55")
-      , property "transition" "2s"
+      , property "transition" "0.9s"
       , transformStyle preserve3d
       , property "backface-visibility" "hidden"
       ]
@@ -56,12 +57,23 @@ css =
   , class Logo
     [ color logoColor
     , fontFamilies ["Helvetica"]
+    , marginBottom (px 5)
     ]
 
   , class Content
     [ margin2 (px 0) auto
     , width (px 500)
     , textAlign center
+    , fontFamily sansSerif
+    ]
+
+  , class Pallero
+    [ displayFlex
+    , textAlign left
+    ]
+  , class Ikoni
+    [ width (px 80)
+    , margin2 (px -25) (px 10)
     ]
   ]
 

@@ -12,10 +12,17 @@ type Classes
   | Front
   | Back
 
+  | Horflip
+
   | Nav
   | Selected
-  | Logo
+
   | Content
+
+  | Logo
+
+  | Pallero
+  | Ikoni
 
 type Ids
   = Asd
