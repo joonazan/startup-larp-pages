@@ -2,6 +2,7 @@ module Main exposing (main)
 
 import Html
 import Frontpage
+import Message exposing (Message(..))
 
 main =
     Html.program
@@ -12,7 +13,9 @@ main =
         }
 
 init =
-    (0, Cmd.none)
+    ((0, 0), Cmd.none)
 
-update msg model =
-    (0, Cmd.none)
+update msg (current, prev) =
+    case msg of
+        Navigation page ->
+            ((page, current), Cmd.none)

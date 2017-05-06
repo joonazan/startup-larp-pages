@@ -12,5 +12,10 @@ type Classes
   | Front
   | Back
 
+  | Nav
+  | Selected
+  | Logo
+  | Content
+
 type Ids
   = Asd
