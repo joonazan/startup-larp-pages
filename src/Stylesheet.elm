@@ -33,6 +33,10 @@ css =
       ]
     ]
 
+  , class Front
+    [ transform <| rotateY (deg 0) -- support old firefox version
+    ]
+
   , class Back
     [ transform <| rotateY (deg 180)
     ]
@@ -62,7 +66,7 @@ css =
 
   , class Content
     [ margin2 (px 0) auto
-    , width (px 500)
+    , width (px 600)
     , textAlign center
     , fontFamily sansSerif
     ]
@@ -73,7 +77,7 @@ css =
     ]
   , class Ikoni
     [ width (px 80)
-    , margin2 (px -25) (px 10)
+    , margin2 (px 5) (px 10)
     ]
   ]
 

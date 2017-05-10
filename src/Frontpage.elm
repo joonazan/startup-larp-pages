@@ -2,7 +2,7 @@ module Frontpage exposing (view)
 
 import Html exposing (..)
 import Html.Events exposing (onClick)
-import Html.Attributes exposing (src)
+import Html.Attributes exposing (src, width)
 import Classes exposing (class, Classes(..))
 import Message exposing (Message(..))
 
@@ -75,11 +75,16 @@ etusivu =
 
 pallero kuva teksti =
     div [class [Pallero]]
-    [ img
-        [ src kuva
-        , class [Ikoni]
+
+    -- image is wrapped in div to work around webkit horizontal size bug
+    [ div []
+        [ img
+            [ src kuva
+            , class [Ikoni]
+            ]
+            []
         ]
-        []
+
     , p [] [text teksti]
     ]
 
