@@ -79,6 +79,14 @@ css =
     [ width (px 80)
     , margin2 (px 5) (px 10)
     ]
+
+  , class BigImage
+    [ marginLeft (px -90)
+    ]
+
+  , class Caption
+    [ fontStyle italic
+    ]
   ]
 
 allChildren x =

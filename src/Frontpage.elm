@@ -125,7 +125,13 @@ sillä moni ammattilainenkin tuntee usein itsensä huonoksi ja epävarmaksi.
 
 story =
     div []
-    [ kappale """
+    [ img
+        [ src "DOF.jpg"
+        , class [BigImage]
+        ]
+        []
+    , p [class [Caption]] [text "Not actual in-game footage"]
+    , kappale """
 Vuosi 2017, Helsinki. Pelifirma Macrohardin toimistolla vietetään unetonta yötä.
 Koodarien on saatava jotakin kasaan, jotta markkinointipuolen tyypit voivat esitellä
 sijoittajille uuden pelin.

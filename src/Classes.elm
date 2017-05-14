@@ -24,5 +24,8 @@ type Classes
   | Pallero
   | Ikoni
 
+  | BigImage
+  | Caption
+
 type Ids
   = Asd
