@@ -105,7 +105,12 @@ kappale x =
 
 visio =
     div []
-        [ kappale """
+        [ img
+            [ src "/img/vision.jpg"
+            , class [BigImage]
+            ]
+            []
+        , kappale """
 Meistä koodaaminen on tosi siistiä, raivostuttavaa, mahtavaa ja tylsää.
 Haluamme tarjota kokemuksen siitä myös niille, jotka eivät ole koskaan koodanneet.
 """
@@ -219,6 +224,7 @@ Ada on lisäksi osa-aikainen tutkimusassari ja Suomen huonoin kisakoodari, Aino 
     , kappale """
 Larppi saa tukea ohjelmistoyritys Futuricelta, jonka tiloissa peli pelataan.
 """
+    , img [src "/img/stock.jpg"] []
     , kappale """
 Larpin sivut on tehnyt Joonatan Saarhelo. Sivuja ei kannata ottaa kovin vakavissaan. Älkää ainakaan tehkö samanlaisia animaatioita omiin sivuihinne.
 """
@@ -229,7 +235,12 @@ Sivuilla käytetyt ikonit ovat peräisin sivulta flaticon.com. Ne on tehnyt käy
 
 themes =
     div []
-    [ kappale "Tästä listasta voit poimia inspiraatiota hahmoosi. Lista ei ole millään lailla kattava, vaan tarkoitettu mielikuvituksen herättelijäksi. Mieti, millä tavalla kiinnostavat teemat olisivat voineet vaikuttaa hahmosi elämään, kiinnostuksen kohteisiin, työskentelytapoihin ja persoonaan."
+    [ img
+        [ src "/img/market.jpg"
+        , class [BigImage]
+        ]
+        []
+    , kappale "Tästä listasta voit poimia inspiraatiota hahmoosi. Lista ei ole millään lailla kattava, vaan tarkoitettu mielikuvituksen herättelijäksi. Mieti, millä tavalla kiinnostavat teemat olisivat voineet vaikuttaa hahmosi elämään, kiinnostuksen kohteisiin, työskentelytapoihin ja persoonaan."
     , h2 [] [text "Ammattilaisten monet koulukunnat"]
     , kappale "Monen koodarin mielestä jokin ohjelmointityyli tai –kieli on selkeästi parempi kuin muut. Myös tietyntyyppiset ongelmat tai tehtävät voivat olla joko kiinnostavia ja haastavia tai tylsiä ja työläitä, ohjelmoijan taustasta riippuen. Myös graafikko- ja muusikkohahmot voivat pitää koulukunta-ajattelua joko typeränä tai puolustaa hanakasti omaa koulukuntaansa. (Pelinjohto auttaa tarvittaessa keksimään hahmon tyyliin ja mieltymyksiin soveltuvan koulukunnan.)"
     , h2 [] [text "Koulutus vs. oikea kompetenssi"]
