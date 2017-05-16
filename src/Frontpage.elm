@@ -2,7 +2,7 @@ module Frontpage exposing (view)
 
 import Html exposing (..)
 import Html.Events exposing (onClick)
-import Html.Attributes exposing (src, width)
+import Html.Attributes exposing (src, width, href)
 import Classes exposing (class, Classes(..))
 import Message exposing (Message(..))
 
@@ -192,11 +192,15 @@ Pelissä noudatetaan Suomen lakia ja yleisiä hyviä tapoja, tarkemmat säännö
 ilmo =
     div []
     [ kappale """
-Pelin ilmoittautumisaika on xx-xx. Lomake ei lähetä erillistä vahvistusviestiä,
+Pelin ilmoittautumisaika on 17.5–31.5. Lomake ei lähetä erillistä vahvistusviestiä,
 kysy sähköpostilla jos pelkäät, ettei ilmoittautumisesi ole tullut perille.
-Hahmojako tehdään viimeistään xx.
+Hahmojako tehdään viimeistään 4.6.
 """
- , kappale """
+    , p [] [a
+            [href "https://docs.google.com/forms/d/e/1FAIpQLSfOyYPdE_HA_ciCBiIM2LEndrDbsOZDJANU4_PyBcYRVLpQEg/viewform"]
+            [text "Ilmoittautumislomake"]
+        ]
+    , kappale """
 Hahmojako tehdään anonyymisti, ja mikäli peliin on enemmän tulijoita kuin mahtuu,
 pyrimme valitsemaan pelaajia, joiden uskomme saavan pelistä eniten irti
 (pelaajan oma kiinnostus, hahmokonseptien sopivuus, ideat hahmon jatkokehitykseen jne).
