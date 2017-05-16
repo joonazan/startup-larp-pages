@@ -27,5 +27,7 @@ type Classes
   | BigImage
   | Caption
 
+  | Link
+
 type Ids
   = Asd

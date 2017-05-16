@@ -93,6 +93,7 @@ sivut =
     [ ("Home", etusivu)
     , ("Vision", visio)
     , ("Story", story)
+    , ("Features", themes)
     , ("Characters", characters)
     , ("About", about)
     , ("Join us!", ilmo)
@@ -226,14 +227,36 @@ Sivuilla käytetyt ikonit ovat peräisin sivulta flaticon.com. Ne on tehnyt käy
 """
     ]
 
+themes =
+    div []
+    [ kappale "Tästä listasta voit poimia inspiraatiota hahmoosi. Lista ei ole millään lailla kattava, vaan tarkoitettu mielikuvituksen herättelijäksi. Mieti, millä tavalla kiinnostavat teemat olisivat voineet vaikuttaa hahmosi elämään, kiinnostuksen kohteisiin, työskentelytapoihin ja persoonaan."
+    , h2 [] [text "Ammattilaisten monet koulukunnat"]
+    , kappale "Monen koodarin mielestä jokin ohjelmointityyli tai –kieli on selkeästi parempi kuin muut. Myös tietyntyyppiset ongelmat tai tehtävät voivat olla joko kiinnostavia ja haastavia tai tylsiä ja työläitä, ohjelmoijan taustasta riippuen. Myös graafikko- ja muusikkohahmot voivat pitää koulukunta-ajattelua joko typeränä tai puolustaa hanakasti omaa koulukuntaansa. (Pelinjohto auttaa tarvittaessa keksimään hahmon tyyliin ja mieltymyksiin soveltuvan koulukunnan.)"
+    , h2 [] [text "Koulutus vs. oikea kompetenssi"]
+    , kappale "It-alalla työskentelee sekä pitkälle koulutettuja että itseoppineita osaajia. Kuinka he suhtautuvat toisiinsa? Mitä jos joku osaa paremmin ne asiat, jotka juuri sinun pitäisi osata - paperilla tai omasta mielestäsi? Keneltä voi kysyä neuvoa, entä jos muut kuvittelevat ettei minusta ole mihinkään?"
+    , h2 [] [text "Sukupuolivähemmistöt it-alalla"]
+    , kappale "Niin koodareista kuin muistakin it-alalla työskentelevistä valtaosa on miehiä. Aiheesta puhutaan niin paljon, että hahmosi ei todennäköisesti ole voinut välttyä kuulemasta keskustelua siitä, miten it-alalle saataisiin enemmän naisia. Onko sukupuolella väliä?"
+    , h2 [] [text "Ulkomaalaisuus, kansainvälisyys ja rasismi"]
+    , kappale "Ei-suomalainen työntekijä on it-alan yrityksessä enemmän sääntö kuin poikkeus, ja monet yritykset pyrkivät nostamaan ulkomaalaisten työntekijöiden osuutta firman väestä. Toisaalta koodareita voi pelottaa työpaikkojen katoaminen halvemman työvoiman maihin kuten Intiaan – eihän siellä edes osata koodata, vai mitä?"
+    , h2 [] [text "Humanistit vs. luonnontieteilijät"]
+    , kappale "Luultavasti hahmo on joutunut jossain vaiheessa elämäänsä ottamaan kantaa siihen, suuntautuuko humanistiselle vai luonnontieteelliselle puolelle. Hahmo voi tuntea ylpeyttä omasta alastaan ja väheksyä toisia (”humanistit vain opettelevat ulkoa ja keksivät juttuja mutu-tuntumalta”/ ”luonnontieteilijät tuijottavat vain kylmiä numeroita ihmisen unohtaen”), tai sitten pitää koko vastakkainasettelua typeränä. Ehkä hahmo ei ole löytänyt paikkaansa kummassakaan ryhmässä?"
+    , h2 [] [text "Uskonto ja elämänkatsomus"]
+    , kappale "Iso osa koodareista on ateisteja, joten uskovainen hahmo saattaa kokea joutuneensa vähemmistöön tai jopa kokea tarvetta piilottaa uskontonsa. Millainen suhde logiikan, järjestelmällisyyden ja koneiden kanssa työskentelevällä on uskontoonsa? Millaista on olla (tai ainakin luulla olevansa) porukan ainoa uskovainen?"
+    , h2 [] [text "Perheelliset, seurustelevat ja sinkut"]
+    , kappale "Start-up-elämä vaatii paljon paitsi työntekijöiltä, myös näiden perheiltä. On vaikeaa joustaa aikatauluista töiden takia, jos lapsi on haettava päiväkodista tai kuljetettava harrastuksiin. Toisaalta jollekulle työt ovat pakokeino hankalan tuntuisesta perhetilanteesta. Myös seurustelu voi olla tärkeä osa hahmon elämää, ja lapsuudenperhe, sukulaiset ja ystävät tuovat elämään ihmissuhteita. Jotkut hahmot voivat olla yksinäisiä ja surra ystävien, seurustelukumppanin ja jälkikasvun puutetta. Stereotypia sosiaalisesti lahjattomasta, tyttöystävää kaipaavasta heteromieskoodarista elää."
+    , h2 [] [text "Työyhteisön sisäiset ristiriidat"]
+    , kappale "Pitkää päivää tekevä porukka on paljon keskenään, eikä yhteistyö ole aina saumatonta. On sekä pieniä asioita - miksei kukaan koskaan tiskaa - että isompia: miten on mahdollista, että kaikki uuden pelin koodi on kadonnut? Selittääkö guru ihan omiaan, vai onko hän tosiaan talon paras koodari? Osa porukkaa luottaa firmaan ja toisiinsa vahvasti, mutta kaikki eivät välttämättä. Mitä kaikkea voi sanoa ääneen?"
+    ]
+
 characters =
     div []
-    [ h2 [] [text "Koodari, ”ihmelapsi” T."]
-    , kappale """
-Tavallaan harmi, että Päivölästä valmistutaan kahdessa vuodessa: viimeisenä lukiovuonaan 17-vuotias T. voitti suomalaisen Datatähti-ohjelmointikilpailun ja menestyi hyvin myös kansainvälisessä lukiotason International Olympiad of Informatics-kisassa. Nyt ylioppilas on ulkona niin lukion kuin yliopistonkin kilpailuista, sillä T. tuli suoraan Päivölästä töihin MacroHardiin. Oppiminen kiinnostaa T:tä, mutta opiskelun hän ei usko siihen auttavan. Yliopistojen fukseille tarjoamat kurssit vaikuttavat ylihelpoilta, ja tässä työssä parhaiten oppii itse tekemällä, ei kirjaa lukemalla. T. on kiinnostunut algoritmeista, konekielestä ja ohjelmointikielten filosofiasta, ja vaikka hänen työpanoksensa onkin tärkeää koodin nopeuden ja muistinkulutuksen hallinnassa, on iso osa työstä kuitenkin pelkkää perusohjelmointia.
-"""
+    [ p []
+        [ text "Hahmojen hahmottamisessa auttaa "
+        , span [class [Link], onClick (Navigation 3)][text "teemalista"]
+        , text "."
+        ]
+    , h2 [] [text "Koodari, ”ihmelapsi” T."]
+    , kappale "Tavallaan harmi, että Päivölästä valmistutaan kahdessa vuodessa: viimeisenä lukiovuonaan 17-vuotias T. voitti suomalaisen Datatähti-ohjelmointikilpailun ja menestyi hyvin myös kansainvälisessä lukiotason International Olympiad of Informatics-kisassa. Nyt ylioppilas on ulkona niin lukion kuin yliopistonkin kilpailuista, sillä T. tuli suoraan Päivölästä töihin MacroHardiin. Oppiminen kiinnostaa T:tä, mutta opiskelun hän ei usko siihen auttavan. Yliopistojen fukseille tarjoamat kurssit vaikuttavat ylihelpoilta, ja tässä työssä parhaiten oppii itse tekemällä, ei kirjaa lukemalla. T. on kiinnostunut algoritmeista, konekielestä ja ohjelmointikielten filosofiasta, ja vaikka hänen työpanoksensa onkin tärkeää koodin nopeuden ja muistinkulutuksen hallinnassa, on iso osa työstä kuitenkin pelkkää perusohjelmointia."
     , h2 [] [text "Koodari, graafinen suunnittelija S."]
-    , kappale """
-S. palkattiin MacroHardiin alun perin siksi, että hän pystyisi varsinaisen graafikon toimensa ohella myös toisinaan auttamaan ohjelmoinnissa. Olihan etenkin web-koodaus hänelle jossakin määrin tuttua, ja näin pienessä firmassa kaikkien täytyy tehdä vähän kaikkea. Gamemen logon suunniteltuaan S. ei ole kuitenkaan juuri tehnyt oman alansa töitä, vaan lähinnä toiminut ohjelmoijana. S. on edelleen tarkka siitä, että kehitettävien pelien visuaaliset elementit ovat toimivia, ja myös ohjelmakoodin selkeys ja luettavuus on hänelle tärkeä asia. S. on ollut mukana miettimässä myös toimiston visuaalista ilmettä ja toimivuutta. Ei ole salaisuus, että S:n mielestä on epäreilua, että K. palkattiin graafikoksi, kun talosta olisi löytynyt tutkinnonkin suorittanut henkilö.
-"""
+    , kappale "S. palkattiin MacroHardiin alun perin siksi, että hän pystyisi varsinaisen graafikon toimensa ohella myös toisinaan auttamaan ohjelmoinnissa. Olihan etenkin web-koodaus hänelle jossakin määrin tuttua, ja näin pienessä firmassa kaikkien täytyy tehdä vähän kaikkea. Gamemen logon suunniteltuaan S. ei ole kuitenkaan juuri tehnyt oman alansa töitä, vaan lähinnä toiminut ohjelmoijana. S. on edelleen tarkka siitä, että kehitettävien pelien visuaaliset elementit ovat toimivia, ja myös ohjelmakoodin selkeys ja luettavuus on hänelle tärkeä asia. S. on ollut mukana miettimässä myös toimiston visuaalista ilmettä ja toimivuutta. Ei ole salaisuus, että S:n mielestä on epäreilua, että K. palkattiin graafikoksi, kun talosta olisi löytynyt tutkinnonkin suorittanut henkilö."
     ]

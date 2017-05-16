@@ -98,6 +98,11 @@ css =
         ]
       ]
     ]
+
+  , class Link
+    [ textDecoration underline
+    , color logoColor
+    ]
   ]
 
 allChildren x =
