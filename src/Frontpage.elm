@@ -152,28 +152,40 @@ ei siis ole luvassa, mutta peli on sisällöltään vauhdikkaampi kuin keskimä�
 Pääpaino on eläytymisessä ja uusissa kokemuksissa, ja joillakin hahmoilla ihmissuhdedraama
 on myös keskiössä.
 """
-    ]
-
-about =
-    div []
-    [ kappale """
-Start-up-larppi on tarkoitettu sellaisille pelaajille, jotka eivät ole koskaan koodanneet – tai korkeintaan hyvin vähän – mutta jotka haluavat päästä kokemaan pelifirman työntekijän maailmaa ja koodaamisen iloa ja tuskaa. Peliin voidaan ottaa mukaan myös koodaustaitoisia pelaajia, mutta he pelaavat lähtökohtaisesti muita kuin koodareita. Tällä tavoin annetaan lisää tilaa ja liikkumavapautta alkujaan koodaustaidottomille pelaajille, ja lisäksi koodauksen mallintaminen saattaa tuntua kokeneesta koodarista tylsältä. (Jos nyt kuitenkin olet koodari ja haluat ehdottomasti pelata koodaria, ilmoa silti ja tarkenna ilmoittautumisen yhteydessä, miksi juuri tämä kiinnostaa!)
-"""
-    , kappale """
-Pelin koodaamista mallinnetaan pelissä ohjelmoimalla visuaalisella ohjelmointikielellä Scratchilla, joka on kehitetty opetustarkoitukseen. Ennen peliä pidetään illalla 20.6. pelaajatapaaminen, jossa pelinjohto opastaa Scratchin käyttöön. Jos et pääse pelaajatapaamiseen, saa opetteluun apua myös etänä. Opettelusta ei kannata ottaa paineita, sillä oikeasti pelissä toteutettavat jutut ovat varsin yksinkertaisia, ja se, ettei jokin onnistu, kuuluu osana myös huippukoodarihahmojen pelikokemukseen.
-"""
-    , kappale """
-Pelin hahmoja kehitetään pelinjohdon kirjoittaman lyhytkuvauksen pohjalta yhteistyössä pelinjohdon kanssa. Omat ideat hahmon kehittämiseen ovat tervetulleita jo ilmoittautumisvaiheessa!
-"""
-    , kappale """
-Pelipaikka on esteetön (TARKISTA TÄMÄ) ja näkövammaisten pelaajien tapauksessa mietitään sopiva vaihtoehto visuaalisen ohjelmointikielen käytölle. Pelin ikäraja on pehmeä 18 (TARKISTA TÄMÄKIN FUTULTA), eli alaikäisten pelaajien toivotaan ottavan yhteyttä pelinjohtoon.
-"""
     , h2 [] [text "Proppautuminen ja välineet"]
     , kappale """
 Peliin tarvittavat propit löytyvät varmasti omasta tai kaverien vaatekaapista. Hahmon tyylistä ja luonteesta riippuen voit pukeutua huppariin, kauluspaitaan, mekkoon, nörtti-t-paitaan, hijabiin tai jakkuun. Halutessasi hahmo voi edustaa vaikka goottityyliä, firmassa ei ole pukukoodia, joten kaikki Helsingin kaduilla vastaan tuleva kelpaa.
 """
     , kappale """
 Pelissä koodataan Scratch-ympäristössä, joten tarvitset peliin käyttöösi kannettavan tietokoneen, johon on asennettu Adobe Flash, sekä mieluiten hiiren. Jos sinulla ei ole kannettavaa, pelinjohto keksii sinulle sellaisen lainaksi jostakin, kunhan ilmoitat asiasta ajoissa.
+"""
+    ]
+
+about =
+    div []
+    [ ul [] <|
+        List.map (\(x, y)-> li [] [span[][text x], text y])
+        [ ("MITÄ", "Start-up-aiheinen liveroolipeli")
+        , ("MISSÄ", "Futurice, Annankatu 34B, Helsinki")
+        , ("MILLOIN", "Peli tiistaina 4.7.2017 klo 15 – 23 (briiffeineen), lisäksi on suositeltavaa osallistua pelaajatapaamiseen tiistaina 20.6.")
+        , ("MITÄ MAKSAA", "pelimaksu 5e + pitsan tms. hinta")
+        , ("KENELLE", "innokkaalle liveroolipelaajalle ennakkotiedoista ja -taidoista riippumatta")
+        , ("KYSY LISÄÄ", "aetapelinjohto@gmail.com")
+        ]
+    , kappale """
+Start-up-larppi on tarkoitettu sellaisille pelaajille, jotka eivät ole koskaan koodanneet – tai korkeintaan hyvin vähän – mutta jotka haluavat päästä kokemaan pelifirman työntekijän maailmaa ja koodaamisen iloa ja tuskaa. Peliin voidaan ottaa mukaan myös koodaustaitoisia pelaajia, mutta he pelaavat lähtökohtaisesti muita kuin koodareita. Tällä tavoin annetaan lisää tilaa ja liikkumavapautta alkujaan koodaustaidottomille pelaajille, ja lisäksi koodauksen mallintaminen saattaa tuntua kokeneesta koodarista tylsältä. (Jos nyt kuitenkin olet koodari ja haluat ehdottomasti pelata koodaria, ilmoa silti ja tarkenna ilmoittautumisen yhteydessä, miksi juuri tämä kiinnostaa!)
+"""
+    , kappale """
+Pelin koodaamista mallinnetaan pelissä ohjelmoimalla visuaalisella ohjelmointikielellä Scratchilla, joka on kehitetty opetustarkoitukseen. Ennen peliä pidetään illalla 20.6. pelaajatapaaminen, jossa pelinjohto opastaa Scratchin käyttöön. Jos et pääse pelaajatapaamiseen, saa opetteluun apua myös etänä. Opettelusta ei kannata ottaa paineita, sillä oikeasti pelissä toteutettavat jutut ovat varsin yksinkertaisia, ja se, ettei jokin onnistu, kuuluu osana myös huippukoodarihahmojen pelikokemukseen.
+"""
+    , kappale """
+Pelin hahmoja kehitetään pelinjohdon kirjoittaman lyhytkuvauksen pohjalta yhteistyössä pelinjohdon kanssa. Omat ideat hahmon kehittämiseen ovat tervetulleita jo ilmoittautumisvaiheessa! Toivomme lisäksi, että pelaajat käyttävät ainakin jonkin verran aikaa ennen peliä ingame somessa, eli siis käytännössä esim. chattaavat keskenään hahmoinaan. Pelinjohto neuvoo sekä hahmojen teossa että somen kanssa alkuun pääsemisessä tarvittaessa.
+"""
+    , kappale """
+Pelipaikka ei ole täysin esteetön - kysy tarkennusta tarvittaessa pelinjohdolta! Näkövammaisten pelaajien tapauksessa mietitään sopiva vaihtoehto visuaalisen ohjelmointikielen käytölle. Pelin ikäraja on pehmeä 18, eli alaikäisten pelaajien toivotaan ottavan yhteyttä pelinjohtoon. Emme halua sulkea ketään kategorisesti pelin ulkopuolelle, joten jos jokin asia voisi hankaloittaa osallistumistasi, mietitään yhdessä, miten se ratkeaa!
+"""
+    , kappale """
+Pelissä noudatetaan Suomen lakia ja yleisiä hyviä tapoja, tarkemmat säännöt tiedotetaan pelaajille ennen pelin alkua. Tarjolla on myös off-tila, johon voi tulla pitämään taukoa pelaamisesta halutessaan.
 """
     ]
 

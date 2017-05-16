@@ -87,6 +87,17 @@ css =
   , class Caption
     [ fontStyle italic
     ]
+
+  , ul
+    [ listStyleType none
+    , textAlign left
+    , descendants
+      [ span
+        [ fontWeight bold
+        , marginRight (px 7)
+        ]
+      ]
+    ]
   ]
 
 allChildren x =
