@@ -50,24 +50,24 @@ etusivu =
         , div [class [Flip]]
             [ div [class [Front]]
                 [ pallero
-                    "/svg/018-computer.svg"
+                    "/img/018-computer.svg"
                     "Koe start-up-yrityksen koodarin tai graafikon elämää, vaikka et oikeasti ole koodari etkä graafikko"
                 , pallero
-                    "/svg/043-idea.svg"
+                    "/img/043-idea.svg"
                     "Suunnittele hahmoasi yhdessä pelinjohdon kanssa"
                 , pallero
-                    "/svg/023-browser.svg"
+                    "/img/023-browser.svg"
                     "Toteuta in-game-peliprojektia koodaamalla tai piirtämällä"
                 , pallero
-                    "/svg/027-cube.svg"
+                    "/img/027-cube.svg"
                     "Eläydy realistiseen nykymaailman ihmiseen, jonka kiinnostukset ja taidot eroavat omistasi"
                 ]
             , div [class [Back]]
                 [ pallero
-                    "/svg/021-wise.svg"
+                    "/img/021-wise.svg"
                     "Ei valmiita hahmoja"
                 , pallero
-                    "/svg/026-patch.svg"
+                    "/img/026-patch.svg"
                     "Ei yliluonnollisia kykyjä ja käsittämättömiä käänteitä"
                 ]
             ]
@@ -126,7 +126,7 @@ sillä moni ammattilainenkin tuntee usein itsensä huonoksi ja epävarmaksi.
 story =
     div []
     [ img
-        [ src "DOF.jpg"
+        [ src "/img/DOF.jpg"
         , class [BigImage]
         ]
         []
