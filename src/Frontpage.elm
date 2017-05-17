@@ -158,12 +158,8 @@ ei siis ole luvassa, mutta peli on sisällöltään vauhdikkaampi kuin keskimä�
 Pääpaino on eläytymisessä ja uusissa kokemuksissa, ja joillakin hahmoilla ihmissuhdedraama
 on myös keskiössä.
 """
-    , h2 [] [text "Proppautuminen ja välineet"]
     , kappale """
 Peliin tarvittavat propit löytyvät varmasti omasta tai kaverien vaatekaapista. Hahmon tyylistä ja luonteesta riippuen voit pukeutua huppariin, kauluspaitaan, mekkoon, nörtti-t-paitaan, hijabiin tai jakkuun. Halutessasi hahmo voi edustaa vaikka goottityyliä, firmassa ei ole pukukoodia, joten kaikki Helsingin kaduilla vastaan tuleva kelpaa.
-"""
-    , kappale """
-Pelissä koodataan Scratch-ympäristössä, joten tarvitset peliin käyttöösi kannettavan tietokoneen, johon on asennettu Adobe Flash, sekä mieluiten hiiren. Jos sinulla ei ole kannettavaa, pelinjohto keksii sinulle sellaisen lainaksi jostakin, kunhan ilmoitat asiasta ajoissa.
 """
     ]
 
